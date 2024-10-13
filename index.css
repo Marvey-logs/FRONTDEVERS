@@ -1,0 +1,157 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite; 
+}
+
+.content {
+    width: 50vw; 
+    background-color: white; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+    top: 5vh; 
+    bottom: 5vh;
+}
+.content img {
+width: 45vw; 
+border-radius: 8px;
+margin-bottom: 20px; 
+position: absolute; 
+}
+.content h1 {
+    margin-top: 300px;
+    text-align: left; 
+    width: 100%; 
+    font-style: normal;
+}
+
+.content .quickdish {
+    margin-top: 10px;
+    text-align: left; 
+    width: 100%; 
+}
+
+
+.preptime {
+    position: relative;
+    background-color: rgb(252, 238, 241);
+    width: 90%; 
+    padding-left: 20px;
+    margin: 20px 0; 
+    border-radius: 8px; 
+}
+.preptime > .ing {
+    text-align: left; 
+    margin-left: 0%;
+    color: rgb(121, 29, 29);
+}
+.preptime > ul {
+    text-align: left; 
+    margin-left: 6%;
+}
+
+.d2 {
+    position: relative;
+    width: 100%; 
+    padding-left: 20px;
+    margin: 20px 0; /* Optional: Add some margin above and below */
+    border-radius: 8px; /* Add border radius */
+}
+.d2 > h2 {
+    text-align: left; 
+    margin-left: 0%;
+    color: rgb(178, 8, 8);
+}
+.d2 > ul {
+    text-align: left; 
+    margin-left: 6%;
+}
+
+.d3 {
+    position: relative;
+    width: 100%; 
+    padding-left: 20px;
+    margin: 20px 0; /* Optional: Add some margin above and below */
+    border-radius: 8px; /* Add border radius */
+}
+h2 {
+    text-align: left; 
+    margin-left: 0%;
+    color: rgb(178, 8, 8);
+}
+.d3 > ol {
+    text-align: left; 
+    margin-left: 6%;
+}
+.nuts {
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 80%;
+}
+.sb{
+    position: absolute;
+    margin-left: 25vw;
+}
+.table {
+    position: relative;
+    width: 80%;
+}
+hr {
+    border: 1px solid #ccc; 
+    margin: 10px 0; 
+    width: 100%;
+}
+
+
+@media (max-width: 580px) { 
+
+
+
+    .content {
+        position: relative;
+        width: 100vw; 
+        background-color: white; 
+        top: 0;
+        border-radius: 0;
+    }
+
+    .content > img {
+        width: 100vw; 
+        border-radius: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    .content h1 {
+        margin-top: 50%; 
+        font-size: 24px; /* Adjust font size for better readability */
+    }
+
+    .content .quickdish {
+        font-size: 18px; /* Make the quick dish text slightly larger */
+    }
+
+    .preptime {
+        width: 100%; /* Allow the prep time div to take full width */
+        padding-left: 10px; /* Adjust padding for better spacing */
+    }
+
+    .d2,
+    .d3 {
+        width: 100%; /* Ensure these divs also take full width */
+        padding-left: 10px; /* Adjust padding for better spacing */
+    }
+}
